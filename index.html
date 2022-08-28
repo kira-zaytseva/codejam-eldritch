@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eldritch Horror</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <main>
+        <section class="ancient-cards-container">
+            <img class="cthulthu ancient-card" src="./assets/Ancients/Cthulthu.png" alt="cthulthu"/>
+            <img class="shub-niggurath ancient-card" src="./assets/Ancients/ShubNiggurath.png" alt="shub-niggurath"/>
+            <img class="iog-sothoth ancient-card" src="./assets/Ancients/IogSothoth.png" alt="iog-sothoth"/>
+            <img class="azathoth ancient-card" src="./assets/Ancients/Azathoth.png" alt="azathoth"/>
+        </section>
+        <section class="levels-container">
+            <button data-level="first" class="first-level levels-btn">The easiest</button>
+            <button data-level="second" class="second-level levels-btn">Easy</button>
+            <button data-level="third" class="third-level levels-btn">Normal</button>
+            <button data-level="forth" class="forth-level levels-btn">Hard</button>
+            <button data-level="fifth" class="fifth-level levels-btn">The hardest</button>
+        </section>
+        <section class="shuffle-container">
+            <button class="shuffle-btn">Замешать</button>
+        </section>
+        <section class="deck-container">
+            <div class="state-container">
+                <div class="first-stage">
+                    <p class="stage-text">First stage</p>
+                    <div class="dots">
+                        <div class="green-dot dot">0</div>
+                        <div class="brown-dot dot">1</div>
+                        <div class="blue-dot dot">2</div>
+                    </div>
+                </div>
+                <div class="second-stage">
+                    <p class="stage-text">Second stage</p>
+                    <div class="dots">
+                        <div class="green-dot dot">0</div>
+                        <div class="brown-dot dot">1</div>
+                        <div class="blue-dot dot">2</div>
+                    </div>
+                </div>
+                <div class="third-stage">
+                    <p class="stage-text">Third stage</p>
+                    <div class="dots">
+                        <div class="green-dot dot">0</div>
+                        <div class="brown-dot dot">1</div>
+                        <div class="blue-dot dot">2</div>
+                    </div>
+                </div>
+            </div>
+            <img class="deck-cards" src="./assets/mythicCardBackground.png" alt="card-background"/>
+            <img class="current-card" src="./assets/MythicCards/blue/blue1.png" alt="game-card"/>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(./assets/eldritchhorror_gameboard.webp);
+    backdrop-filter: brightness(40%);
+    padding: 30px;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ancient-cards-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.ancient-card {
+    width: 200px;
+    border: 3px solid rgba(255, 255, 255, 0.34);
+}
+
+.ancient-card:not(.disabled):hover,
+.active {
+    border: 5px solid rgba(254, 168, 168, 0.728);
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.levels-container {
+    display: none;
+    justify-content: space-around;
+    width: 550px;
+    height: 10px;
+    margin-bottom: 60px;
+}
+
+.levels-btn {
+    height: 20px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.34);
+    color: black;
+    border: 0;
+    border-radius: 3px;
+}
+
+.levels-btn:not(:disabled):not(.active):not(:focus):hover {
+    background-color: rgba(255, 255, 255, 0.671);
+    height: 25px;
+    width: 120px;
+}
+
+.levels-btn.active,
+.levels-btn:focus {
+    background-color: rgba(64, 255, 39, 0.671);
+    height: 25px;
+    width: 120px;
+}
+
+.shuffle-btn {
+    display: none;
+    margin-bottom: 60px;
+    border: 0;
+}
+
+.shuffle-btn:disabled {
+    background-color: darkgray;
+}
+
+.deck-container {
+    display: none;
+    justify-content: center;
+    gap: 200px;
+    width: 100%;
+}
+
+.state-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    width: 200px;
+}
+
+.stage-text {
+    color: aliceblue;
+}
+
+.dots {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.dot {
+    border-radius: 15px;
+    padding: 3px 8px;
+}
+
+.green-dot {
+    background-color: green;
+}
+
+.brown-dot {
+    background-color: brown;
+}
+
+.blue-dot {
+    background-color: blue;
+}
+
+.deck-cards {
+    width: 200px;
+}
+
+.current-card {
+    display: none;
+    width: 200px;
+}
