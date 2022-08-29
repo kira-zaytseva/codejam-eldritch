@@ -148,6 +148,11 @@ main {
 
 .deck-cards {
     width: 200px;
+    cursor: pointer;
+}
+
+.deck-cards:hover {
+    box-shadow: 1px 1px 8px 5px #00000034;
 }
 
 .current-card {
